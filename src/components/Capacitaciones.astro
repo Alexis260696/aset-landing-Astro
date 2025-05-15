@@ -1,0 +1,283 @@
+---
+import Section from "./Section.astro"
+---
+
+<Section
+  title="Capacitaciones"
+  color="white"
+  id="capacitacion"
+>
+  <div slot="footer" class="relative z-10">
+    <!-- Contenedor compacto -->
+    <div class="container mx-auto px-4 py-5 max-w-6xl">
+      <!-- Encabezado minimalista -->
+      <div class="text-center mb-8">
+        <h2 class="text-2xl md:text-3xl font-bold text-white">
+          <span class="text-emerald-400">Cursos Certificados</span> en Seguridad Industrial
+        </h2>
+        <div class="w-24 h-1 bg-emerald-400 mx-auto mt-4"></div>
+      </div>
+
+      <!-- Grid de 2 columnas para los cursos -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- Columna 1 -->
+        <div class="space-y-4">
+          <!-- Curso 1 -->
+          <div class="bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 p-4 hover:border-emerald-400/30 transition-colors">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div class="flex items-start gap-3">
+                <div class="bg-emerald-400/10 p-2 rounded-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-white">DS3 Avanzado</h3>
+                  <p class="text-sm text-white/70 mt-1">Implementación profesional de sistemas DS3</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <span class="text-xs bg-emerald-400/10 text-emerald-400 px-2 py-1 rounded-full">32 horas</span>
+                <a href="#contacto" class="text-sm font-medium text-emerald-400 hover:text-emerald-300 transition-colors whitespace-nowrap">
+                  Más info →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Curso 2 -->
+          <div class="bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 p-4 hover:border-blue-400/30 transition-colors">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div class="flex items-start gap-3">
+                <div class="bg-blue-400/10 p-2 rounded-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-white">DS3 Básico</h3>
+                  <p class="text-sm text-white/70 mt-1">Fundamentos de seguridad y salud laboral</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <span class="text-xs bg-blue-400/10 text-blue-400 px-2 py-1 rounded-full">16 horas</span>
+                <a href="#contacto" class="text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors whitespace-nowrap">
+                  Más info →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Curso 3 -->
+          <div class="bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 p-4 hover:border-red-400/30 transition-colors">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div class="flex items-start gap-3">
+                <div class="bg-red-400/10 p-2 rounded-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-white">Primeros Auxilios</h3>
+                  <p class="text-sm text-white/70 mt-1">Protocolos para emergencias médicas</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <span class="text-xs bg-red-400/10 text-red-400 px-2 py-1 rounded-full">24 horas</span>
+                <a href="#contacto" class="text-sm font-medium text-red-400 hover:text-red-300 transition-colors whitespace-nowrap">
+                  Más info →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Curso 4 -->
+          <div class="bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 p-4 hover:border-yellow-400/30 transition-colors">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div class="flex items-start gap-3">
+                <div class="bg-yellow-400/10 p-2 rounded-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-white">Riesgos Eléctricos</h3>
+                  <p class="text-sm text-white/70 mt-1">Normativa para trabajos con electricidad</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <span class="text-xs bg-yellow-400/10 text-yellow-400 px-2 py-1 rounded-full">20 horas</span>
+                <a href="#contacto" class="text-sm font-medium text-yellow-400 hover:text-yellow-300 transition-colors whitespace-nowrap">
+                  Más info →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Curso 5 -->
+          <div class="bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 p-4 hover:border-purple-400/30 transition-colors">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div class="flex items-start gap-3">
+                <div class="bg-purple-400/10 p-2 rounded-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-white">Auditor DS3</h3>
+                  <p class="text-sm text-white/70 mt-1">Formación para auditorías internas</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <span class="text-xs bg-purple-400/10 text-purple-400 px-2 py-1 rounded-full">40 horas</span>
+                <a href="#contacto" class="text-sm font-medium text-purple-400 hover:text-purple-300 transition-colors whitespace-nowrap">
+                  Más info →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna 2 -->
+        <div class="space-y-4">
+          <!-- Curso 6 -->
+          <div class="bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 p-4 hover:border-cyan-400/30 transition-colors">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div class="flex items-start gap-3">
+                <div class="bg-cyan-400/10 p-2 rounded-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-white">Trabajos en Altura</h3>
+                  <p class="text-sm text-white/70 mt-1">Protocolos y equipos de protección</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <span class="text-xs bg-cyan-400/10 text-cyan-400 px-2 py-1 rounded-full">18 horas</span>
+                <a href="#contacto" class="text-sm font-medium text-cyan-400 hover:text-cyan-300 transition-colors whitespace-nowrap">
+                  Más info →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Curso 7 -->
+          <div class="bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 p-4 hover:border-orange-400/30 transition-colors">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div class="flex items-start gap-3">
+                <div class="bg-orange-400/10 p-2 rounded-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-orange-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-white">Manejo de Sustancias</h3>
+                  <p class="text-sm text-white/70 mt-1">Químicas peligrosas y normativa</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <span class="text-xs bg-orange-400/10 text-orange-400 px-2 py-1 rounded-full">22 horas</span>
+                <a href="#contacto" class="text-sm font-medium text-orange-400 hover:text-orange-300 transition-colors whitespace-nowrap">
+                  Más info →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Curso 8 -->
+          <div class="bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 p-4 hover:border-pink-400/30 transition-colors">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div class="flex items-start gap-3">
+                <div class="bg-pink-400/10 p-2 rounded-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-pink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-white">Protección Radiológica</h3>
+                  <p class="text-sm text-white/70 mt-1">Normas para trabajos con radiación</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <span class="text-xs bg-pink-400/10 text-pink-400 px-2 py-1 rounded-full">28 horas</span>
+                <a href="#contacto" class="text-sm font-medium text-pink-400 hover:text-pink-300 transition-colors whitespace-nowrap">
+                  Más info →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Curso 9 -->
+          <div class="bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 p-4 hover:border-indigo-400/30 transition-colors">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div class="flex items-start gap-3">
+                <div class="bg-indigo-400/10 p-2 rounded-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-white">Espacios Confinados</h3>
+                  <p class="text-sm text-white/70 mt-1">Protocolos de entrada y rescate</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <span class="text-xs bg-indigo-400/10 text-indigo-400 px-2 py-1 rounded-full">20 horas</span>
+                <a href="#contacto" class="text-sm font-medium text-indigo-400 hover:text-indigo-300 transition-colors whitespace-nowrap">
+                  Más info →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Curso 10 -->
+          <div class="bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 p-4 hover:border-rose-400/30 transition-colors">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div class="flex items-start gap-3">
+                <div class="bg-rose-400/10 p-2 rounded-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-rose-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-white">Equipos de Protección</h3>
+                  <p class="text-sm text-white/70 mt-1">Selección y uso correcto de EPP</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <span class="text-xs bg-rose-400/10 text-rose-400 px-2 py-1 rounded-full">14 horas</span>
+                <a href="#contacto" class="text-sm font-medium text-rose-400 hover:text-rose-300 transition-colors whitespace-nowrap">
+                  Más info →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA compacto -->
+      <div class="text-center mt-8">
+        <a href="#contacto" class="inline-flex items-center text-emerald-400 hover:text-emerald-300 text-sm font-medium">
+          <span>¿Necesitas un curso personalizado?</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fondo minimalista -->
+  <img
+    slot="background"
+    class="object-center object-cover h-full w-full"
+    src="/utilities/verdeAzul.svg"
+    alt="Capacitaciones en seguridad industrial"
+  />
+  
+  <!-- Overlay sutil -->
+  <div slot="background" class="absolute inset-0 bg-black/40"></div>
+</Section>

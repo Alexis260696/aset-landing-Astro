@@ -1,0 +1,150 @@
+---
+import Section from "./Section.astro"
+---
+
+<Section
+  title="Acompañamiento Anual"
+  color="white"
+  id="acompañamiento"
+>
+  <div slot="footer" class="relative z-10 h-full">
+    <!-- Contenido principal centrado -->
+    <div class="container mx-auto px-6 h-full flex flex-col justify-center py-12">
+      <!-- Título de sección -->
+      <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-4">
+        Planes integrales de <span class="text-emerald-400">seguridad industrial</span>
+      </h2>
+      
+      <!-- Subtítulo -->
+      <p class="text-xl text-white/80 text-center mb-12 max-w-2xl mx-auto">
+        Soluciones completas bajo contrato con acompañamiento continuo
+      </p>
+
+      <!-- Contenedor de tarjetas -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto w-full">
+        <!-- Tarjeta 1: Descripción -->
+        <div class="bg-white/90 text-black p-8 rounded-xl shadow-lg hover:shadow-emerald-400/20 transition-shadow flex flex-col">
+          <div class="flex items-center mb-6">
+            <div class="bg-emerald-500 p-3 rounded-lg mr-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold">Acompañamiento Continuo</h3>
+          </div>
+          <p class="text-gray-700 mb-6 flex-grow">
+            Servicio completo de consultoría durante 12 meses con revisiones periódicas, actualización de protocolos y soporte permanente.
+          </p>
+          <div class="bg-emerald-50 p-4 rounded-lg border border-emerald-100">
+            <h4 class="font-bold text-emerald-800 text-sm mb-3">INCLUYE EN TODOS LOS PLANES:</h4>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-start">
+                <span class="text-emerald-600 mr-2">✓</span>
+                <span>Asesoría especializada</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-emerald-600 mr-2">✓</span>
+                <span>Actualización normativa</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-emerald-600 mr-2">✓</span>
+                <span>Informes trimestrales</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2: Plan Básico -->
+        <div class="bg-white/5 backdrop-blur-sm text-white p-8 rounded-xl border border-white/10 hover:border-emerald-400 transition-all flex flex-col">
+          <div class="flex justify-between items-start mb-4">
+            <h3 class="text-xl font-bold">Plan Básico</h3>
+            <span class="bg-emerald-500/30 text-emerald-300 px-3 py-1 rounded-full text-xs">PYMES</span>
+          </div>
+          <p class="text-white/80 text-sm mb-6">Ideal para pequeñas y medianas empresas</p>
+          <div class="mb-6">
+            <span class="text-2xl font-bold">$10,250</span>
+            <span class="text-white/60 text-sm">/mes + IVA</span>
+          </div>
+          <ul class="space-y-3 text-sm text-white/80 flex-grow mb-6">
+            <li class="flex items-start">
+              <span class="text-emerald-400 mr-2">•</span>
+              <span>2 auditorías anuales</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-emerald-400 mr-2">•</span>
+              <span>Soporte por email</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-emerald-400 mr-2">•</span>
+              <span>1 capacitación anual</span>
+            </li>
+          </ul>
+          <a 
+            href="#contacto" 
+            class="mt-auto bg-emerald-500 hover:bg-emerald-600 text-black font-bold py-3 px-6 rounded-lg text-center transition-colors"
+          >
+            Contratar
+          </a>
+        </div>
+
+        <!-- Tarjeta 3: Plan Premium -->
+        <div class="bg-white/10 backdrop-blur-sm text-white p-8 rounded-xl border border-emerald-400/50 hover:border-emerald-400 transition-all flex flex-col relative">
+          <div class="absolute top-0 right-0 bg-emerald-500 text-black font-bold text-xs px-4 py-2 rounded-bl-lg rounded-tr-xl">
+            RECOMENDADO
+          </div>
+          <div class="flex justify-between items-start mb-4">
+            <h3 class="text-xl font-bold">Plan Premium</h3>
+            <span class="bg-emerald-500/30 text-emerald-300 px-3 py-1 rounded-full text-xs">EMPRESAS</span>
+          </div>
+          <p class="text-white/80 text-sm mb-6">Solución completa para grandes organizaciones</p>
+          <div class="mb-6">
+            <span class="text-2xl font-bold">$20,500</span>
+            <span class="text-white/60 text-sm">/mes + IVA</span>
+          </div>
+          <ul class="space-y-3 text-sm text-white/80 flex-grow mb-6">
+            <li class="flex items-start">
+              <span class="text-emerald-400 mr-2">•</span>
+              <span>4 auditorías anuales</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-emerald-400 mr-2">•</span>
+              <span>Soporte 24/7</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-emerald-400 mr-2">•</span>
+              <span>4 capacitaciones anuales</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-emerald-400 mr-2">•</span>
+              <span>Informes ejecutivos</span>
+            </li>
+          </ul>
+          <a 
+            href="#contacto" 
+            class="mt-auto bg-emerald-500 hover:bg-emerald-600 text-black font-bold py-3 px-6 rounded-lg text-center transition-colors"
+          >
+            Contratar
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flecha indicadora de scroll -->
+    <!-- <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white/60" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+      </svg>
+    </div> -->
+  </div>
+
+  <!-- Fondo con overlay oscuro -->
+  <img
+    slot="background"
+    class="object-center object-cover h-full w-full"
+    src="/utilities/cielo.svg"
+    id="bg-image-acompañamiento"
+  />
+  
+  <!-- Overlay oscuro para mejor legibilidad -->
+  <div slot="background" class="absolute inset-0 bg-black/50"></div>
+</Section>

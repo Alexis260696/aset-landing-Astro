@@ -1,0 +1,107 @@
+---
+import Section from "./Section.astro"
+---
+
+<Section
+  title="Conócenos"
+  color="white"
+  id="nosotros"
+>
+  <div slot="footer" class="relative z-10 h-full">
+    <!-- Contenido principal centrado con altura completa -->
+    <div class="container mx-auto px-6 h-full flex flex-col justify-center items-center text-center ">
+      <!-- Título de sección -->
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+        Comprometidos con tu <span class="text-emerald-400">seguridad</span>
+      </h2>
+      
+      <!-- Subtítulo -->
+      <p class="text-xl md:text-xl text-white/80 mb-10 max-w-3xl mx-auto leading-relaxed">
+        En <strong class="text-white">Aset+</strong>, somos especialistas en protección integral para tu empresa, el medio ambiente y preparación ante emergencias.
+      </p>
+      
+      <!-- Cita destacada -->
+      <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-6 mb-8 max-w-4xl mx-auto">
+        <p class="text-emerald-300 italic text-lg md:text-xl">
+          "Combinamos experiencia técnica con un enfoque práctico para identificar, analizar y mitigar riesgos, mientras capacitamos a tu equipo con programas personalizados."
+        </p>
+      </div>
+
+      <!-- Tarjetas de Misión, Visión y Valores -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-5xl">
+        <!-- Tarjeta Misión -->
+        <div class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-emerald-400 transition-all h-full flex flex-col">
+          <div class="bg-emerald-500/20 p-3 rounded-lg w-fit mx-auto mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Misión</h3>
+          <p class="text-white/80 flex-grow text-sm">
+            Mejorar el bienestar de nuestros clientes mediante soluciones estratégicas que combinan excelencia técnica con un enfoque humano en seguridad laboral y medioambiental.
+          </p>
+        </div>
+
+        <!-- Tarjeta Visión -->
+        <div class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-emerald-400 transition-all h-full flex flex-col">
+          <div class="bg-emerald-500/20 p-3 rounded-lg w-fit mx-auto mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Visión</h3>
+          <p class="text-white/80 flex-grow text-sm">
+            Ser reconocidos nacionalmente por nuestra innovación y excelencia, convirtiéndonos en socios estratégicos para la seguridad sostenible de nuestros clientes.
+          </p>
+        </div>
+
+        <!-- Tarjeta Valores -->
+        <div class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-emerald-400 transition-all h-full flex flex-col">
+          <div class="bg-emerald-500/20 p-3 rounded-lg w-fit mx-auto mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Valores</h3>
+          <ul class="space-y-2 text-white/80 text-sm text-left">
+            <li class="flex items-start">
+              <span class="flex-shrink-0 mt-1.5 w-2 h-2 bg-emerald-400 rounded-full mr-2"></span>
+              <span><strong class="text-white">Integridad:</strong> Actuamos con ética y transparencia</span>
+            </li>
+            <li class="flex items-start">
+              <span class="flex-shrink-0 mt-1.5 w-2 h-2 bg-emerald-400 rounded-full mr-2"></span>
+              <span><strong class="text-white">Respeto:</strong> Valoramos a cada individuo y su entorno</span>
+            </li>
+            <li class="flex items-start">
+              <span class="flex-shrink-0 mt-1.5 w-2 h-2 bg-emerald-400 rounded-full mr-2"></span>
+              <span><strong class="text-white">Responsabilidad:</strong> Cumplimos con excelencia</span>
+            </li>
+            <li class="flex items-start">
+              <span class="flex-shrink-0 mt-1.5 w-2 h-2 bg-emerald-400 rounded-full mr-2"></span>
+              <span><strong class="text-white">Calidad:</strong> Superamos expectativas</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Flecha indicadora de scroll (opcional) -->
+    <!-- <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white/60" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+      </svg>
+    </div> -->
+  </div>
+
+  <!-- Fondo con overlay oscuro -->
+  <img
+    slot="background"
+    class="object-center object-cover h-full w-full"
+    src="/utilities/azul.svg"
+    id="bg-image-modely"
+  />
+  
+  <!-- Overlay oscuro para mejor legibilidad -->
+  <div slot="background" class="absolute inset-0 bg-black/50"></div>
+</Section>

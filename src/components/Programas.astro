@@ -1,0 +1,181 @@
+---
+import Section from "./Section.astro"
+---
+
+<Section
+  title="Programas Aset+"
+  color="white"
+  id="programas"
+>
+  <div slot="footer" class="relative z-10 h-full">
+    <!-- Contenido principal centrado -->
+    <div class="container mx-auto px-6 h-full flex flex-col justify-center">
+      <!-- Encabezado de sección -->
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+          Cumplimiento normativo <span class="text-emerald-400">sin complicaciones</span>
+        </h2>
+        <p class="text-xl text-white/80">
+          Programas anuales con acompañamiento personalizado adaptados a tu industria
+        </p>
+      </div>
+
+      <!-- Grid de programas -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <!-- Programa Básico -->
+        <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl hover:border-emerald-400 transition-all flex flex-col h-full">
+          <div class="p-8 flex-grow">
+            <div class="bg-emerald-500/20 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Básico</h3>
+            <p class="text-white/80 mb-6">Para PYMES iniciando en compliance.</p>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-400 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-white/90">4 visitas/año</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-400 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-white/90">1 auditoría anual</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-400 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-white/90">Soporte por email</span>
+              </li>
+            </ul>
+          </div>
+          <div class="px-8 pb-8">
+            <a href="#contacto" class="block w-full border-2 border-emerald-400 hover:bg-emerald-400/10 text-emerald-400 font-bold py-3 px-6 rounded-lg text-center transition-colors">
+              Más información
+            </a>
+          </div>
+        </div>
+
+        <!-- Programa Estándar (Destacado) -->
+        <div class="relative bg-gradient-to-b from-emerald-400/10 to-transparent border border-emerald-400/50 rounded-xl hover:border-emerald-400 transition-all flex flex-col h-full transform scale-105 z-10">
+          <div class="absolute top-4 right-4 bg-emerald-500 text-black font-bold text-xs px-3 py-1 rounded-full">
+            POPULAR
+          </div>
+          <div class="p-8 flex-grow">
+            <div class="bg-emerald-500/30 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Estándar</h3>
+            <p class="text-white/80 mb-6">Cumplimiento avanzado para empresas en crecimiento.</p>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-400 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-white/90">1 visita mensual</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-400 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-white/90">3 auditorías anuales</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-400 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-white/90">Soporte telefónico 24/7</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-400 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-white/90">2 capacitaciones anuales</span>
+              </li>
+            </ul>
+          </div>
+          <div class="px-8 pb-8">
+            <a href="#contacto" class="block w-full bg-emerald-500 hover:bg-emerald-600 text-black font-bold py-3 px-6 rounded-lg text-center transition-colors">
+              Contratar
+            </a>
+          </div>
+        </div>
+
+        <!-- Programa Premium -->
+        <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl hover:border-emerald-400 transition-all flex flex-col h-full">
+          <div class="p-8 flex-grow">
+            <div class="bg-emerald-500/20 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15l8-8m0 0l-8-8m8 8H4" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Premium</h3>
+            <p class="text-white/80 mb-6">Solución corporativa completa.</p>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-400 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-white/90">Visitas semanales</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-400 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-white/90">Gerente dedicado</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-400 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-white/90">Informes ejecutivos</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-400 mr-2 mt-0.5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span class="text-white/90">Auditorías trimestrales</span>
+              </li>
+            </ul>
+          </div>
+          <div class="px-8 pb-8">
+            <a href="#contacto" class="block w-full border-2 border-emerald-400 hover:bg-emerald-400/10 text-emerald-400 font-bold py-3 px-6 rounded-lg text-center transition-colors">
+              Personalizar
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nota al pie -->
+      <div class="text-center mt-10">
+        <p class="text-white/60 text-sm">
+          * Todos los programas incluyen diagnóstico inicial y certificado anual de cumplimiento.
+        </p>
+      </div>
+    </div>
+
+    <!-- Flecha indicadora de scroll -->
+    <!-- <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white/60" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+      </svg>
+    </div> -->
+  </div>
+
+  <!-- Fondo con overlay oscuro -->
+  <img
+    slot="background"
+    class="object-center object-cover h-full w-full"
+    src="/utilities/verde.svg"
+    alt="Programas de seguridad industrial"
+  />
+  
+  <!-- Overlay oscuro para mejor legibilidad -->
+  <div slot="background" class="absolute inset-0 bg-black/50"></div>
+</Section>

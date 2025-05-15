@@ -132,10 +132,10 @@ import Section from "./Section.astro";
 
   <img
     slot="background"
-    alt="Seguridad Industrial"
+    alt="Capacitaciones en seguridad industrial"
     class="h-full w-full object-cover object-center"
-    src="./public/utilities/azulCielo.svg"
-    id="bg-image-safety"
+    src="./public/utilities/azulCielo.svg" 
+    id="bg-image-capacitaciones"
   />
 </Section>
 
@@ -144,10 +144,11 @@ import Section from "./Section.astro";
     return /Edge|Edg/.test(navigator.userAgent);
   }
 
-  const imageElement = document.querySelector("#bg-image-safety");
+  const imageElement = document.querySelector("#bg-image-capacitaciones");
   if (imageElement) {
     imageElement.src = isEdge() 
       ? "./public/utilities/azulCielo.svg" 
       : "./public/utilities/azulCielo.svg";
   }
 </script>
+./public/utilities/azulCielo.svg

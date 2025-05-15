@@ -29,31 +29,25 @@ import Section from "./Section.astro"
     </div>
   </div>
 
-  <!-- Imágenes de fondo responsivas -->
-  <picture slot="background">
-    <source media="(max-width: 767px)" srcset="/public/utilities/mobil.svg">
-    <source media="(min-width: 768px) and (max-width: 1199px)" srcset="/public/utilities/contacto-tablet.svg">
-    <source media="(min-width: 1200px)" srcset="/public/utilities/contacto.svg">
-    <img
-      alt="Fondo de contacto"
-      class="h-full w-full object-cover object-center"
-      src="/public/utilities/contacto.svg"
-      id="bg-image-contact"
-      loading="lazy"
-    />
-  </picture>
+  <img
+    slot="background"
+    alt="Fondo de contacto"
+    class="h-full w-full object-cover object-center"
+    src="./utilities/contacto.svg"
+    id="bg-image-contact"
+    loading="lazy"
+  />
 </Section>
 
 <script>
   function isEdge() {
-    return navigator.userAgent.indexOf("Edge") > -1 || 
-           navigator.userAgent.indexOf("Edg") > -1;
+    return /Edge|Edg/.test(navigator.userAgent);
   }
 
-  document.addEventListener('DOMContentLoaded', () => {
-    const imageElement = document.getElementById('bg-image-contact');
-    if (imageElement && isEdge()) {
-      imageElement.src = "/public/utilities/contacto.svg";
-    }
-  });
+  const imageElement = document.querySelector("#bg-image-contact");
+  if (imageElement) {
+    imageElement.src = isEdge() 
+      ? "./utilities/contacto.svg" 
+      : "./utilities/contacto.svg";
+  }
 </script>

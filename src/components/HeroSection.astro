@@ -1,0 +1,80 @@
+---
+import Section from "./Section.astro"
+---
+
+<Section
+  title=""
+  color="white"
+  id="inicio"
+>
+  <div slot="footer" class="relative z-10">
+    <!-- Contenido principal centrado -->
+    <div class="container mx-auto px-6 flex flex-col items-center justify-center min-h-[80vh] text-center">
+      <!-- Título principal -->
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-3xl leading-tight">
+        Seguridad Industrial <span class="text-emerald-400">a Otro Nivel</span>
+      </h1>
+      
+      <!-- Subtítulo -->
+      <p class="text-xl md:text-2xl text-white/80 mb-10 max-w-2xl">
+        Soluciones integrales y personalizadas para proteger tu negocio, tus empleados y el medio ambiente
+      </p>
+      
+      <!-- Botones de acción -->
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a
+          href="#contacto"
+          class="bg-emerald-500 hover:bg-emerald-600 text-black font-bold py-3 px-8 rounded-lg transition-colors flex items-center justify-center"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+          </svg>
+          Contactar Ahora
+        </a>
+        
+        <a
+          href="#servicios"
+          class="border-2 border-white hover:border-emerald-500 hover:text-emerald-500 text-white font-bold py-3 px-8 rounded-lg transition-colors flex items-center justify-center"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+          </svg>
+          Nuestros Servicios
+        </a>
+      </div>
+    </div>
+    
+    <!-- Flecha indicadora de scroll -->
+    <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white/60" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+      </svg>
+    </div>
+  </div>
+
+  <!-- Fondo con overlay oscuro -->
+  <img
+    slot="background"
+    class="object-center object-cover h-full w-full"
+    src="/utilities/hero.jpg"
+    id="hero-background"
+  />
+  
+  <!-- Overlay oscuro para mejor legibilidad -->
+  <div slot="background" class="absolute inset-0 bg-black/50"></div>
+</Section>
+
+<script>
+  // Opcional: Efecto de paralaje para el fondo
+  document.addEventListener('DOMContentLoaded', () => {
+    const heroSection = document.querySelector('#inicio');
+    const bgImage = document.querySelector('#hero-background');
+    
+    if (heroSection && bgImage) {
+      window.addEventListener('scroll', () => {
+        const scrollPosition = window.pageYOffset;
+        bgImage.style.transform = `translateY(${scrollPosition * 0.4}px)`;
+      });
+    }
+  });
+</script>
